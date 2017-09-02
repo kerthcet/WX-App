@@ -1,0 +1,79 @@
+/* pages/address/address.wxss */
+.container{
+    z-index: 99
+}
+
+.toast-template{
+    z-index: 100;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 20%;
+    background-color: #5c5c5c;
+    opacity: 0.6;
+    border-radius: 8rpx;
+    padding: 0 20rpx 8rpx 20rpx;
+}
+
+.toast-template text{
+    font-size: 25rpx;
+    color: white;
+    /*color: #969696;*/
+}
+
+
+.address{
+    background-color: #f0eff5;
+    padding: 14rpx 30rpx;
+    border-bottom: 1px solid #e3e2e8;
+    display: flex;
+}
+
+.address-name{
+    background-color: #f0eff5;
+    padding: 14rpx 30rpx;
+    border-bottom: 1px solid #e3e2e8;
+    display: flex;
+}
+
+.address-name text{
+    font-size: 28rpx;
+    line-height: 50rpx;
+}
+
+.address-name input{
+    font-size: 27rpx;
+    margin-left: 60rpx;
+    width: 70%;
+}
+
+.address text{
+    font-size: 28rpx;
+    line-height: 50rpx;
+}
+
+.address input{
+    font-size: 27rpx;
+    margin-left: 30rpx;
+    width: 70%;
+}
+
+.address-confirm{
+    margin-top: 30rpx;
+    width: 100%;
+    text-align: center;
+}
+
+.address-confirm-button{
+    margin: 0 auto;
+    width: 90%;
+    background-color: #34c367;
+    border-radius: 8rpx;
+    padding: 15rpx;
+}
+
+.address-confirm-button text{
+    color: white;
+    font-size: 30rpx;
+    line-height: 50rpx;
+}

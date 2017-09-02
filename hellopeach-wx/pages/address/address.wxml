@@ -1,0 +1,30 @@
+<!--pages/address/address.wxml-->
+<view class="container">
+    <view class="toast-template" hidden="{{toastHidden}}">
+        <text>{{toastText}}</text>
+    </view>
+    <view class="address-name">
+        <text>收货人</text>
+        <input placeholder="名字" bindinput="listenUser" auto-focus="true"/>
+    </view>
+    <view class="address" bindinput="listenPhone">
+        <text>手机号吗</text>
+        <input placeholder="11位手机号" type="number" maxlength="11"/>
+    </view>
+    <!--<view class="address">
+        <text>地区选择</text>
+    </view>-->
+    <view class="address" bindinput="listenAddress">
+        <text>详细地址</text>
+        <input placeholder="详细地址"/>
+    </view>
+    <view class="address" bindinput="listenCode">
+        <text>邮政编码</text>
+        <input placeholder="邮政编码" maxlength="6" type="number"/>
+    </view>
+    <view class="address-confirm" bindtap="addAddress">
+        <view class="address-confirm-button">
+            <text>确定</text>
+        </view>
+    </view>
+</view>

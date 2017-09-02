@@ -1,0 +1,51 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/details/details",
+    "pages/me/me",
+    "pages/story/story",
+    "pages/cart/cart",
+    "pages/order/order",
+    "pages/address/address", 
+    "pages/questions/questions"
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#e74240",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar":{
+    "color": "#f4b2af",
+    "selectedColor": "white",
+    "backgroundColor": "#e74240",
+    "borderStyle": "white",
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/homepage.png",
+        "selectedIconPath": "images/homepage-2.png"
+      },
+      {
+        "pagePath": "pages/story/story",
+        "text": "我的故事",
+        "iconPath": "images/story.png",
+        "selectedIconPath": "images/story-2.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "images/cart.png",
+        "selectedIconPath": "images/cart-2.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "个人中心",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me-2.png"
+      }
+    ]
+  },
+  "debug":true
+}

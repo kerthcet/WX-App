@@ -1,0 +1,30 @@
+/* pages/cart/cart.wxss */
+.cart{
+    position: relative;
+}
+
+.cart-text{
+    position: absolute;
+    top: 300rpx;
+    left: 50%;
+    margin-left: -135rpx;
+}
+
+.cart-text text{
+    font-size: 30rpx;
+}
+
+
+
+.jump-button{
+    position: absolute;
+    background-color: #34c367;
+    width: 90%;
+    margin-top: 450rpx;
+    margin-left: 37.5rpx;
+
+}
+.jump-button text{
+    color: #ffffff;
+    font-size: 35rpx;
+}

@@ -1,0 +1,12 @@
+<!--pages/cart/cart.wxml-->
+<view class="container">
+    <view class="cart">
+        <view class="cart-text">
+            <text>您的购物车空空如也</text>
+        </view>
+
+        <view class="shopping-jump">
+            <button class="jump-button" bindtap="toHomepage"><text>去逛逛</text></button>
+        </view>
+    </view>
+</view>

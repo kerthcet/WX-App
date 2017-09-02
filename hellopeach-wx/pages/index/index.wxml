@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="container">
+  <view>
+    <swiper class="swiper-box" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperChange">
+      <block wx:for="{{imageUrls}}" wx:key="id">
+        <swiper-item>
+          <image src="{{item.url}}" class="slide-image"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="flag">
+    <text>热销排行</text>
+  </view>
+
+  <view class="goods-box">
+    <block wx:for="{{brandUrls}}" wx:key="id">
+      <view class="goods-list">
+
+        <view id="{{item.id}}" class="goods-img" bindtap="toDetails">
+          <image src="{{item.url}}" mode="scaleToFill"></image>
+        </view>
+
+        <view class="goods-intro">
+            {{item.intro}}
+        </view>
+
+        <view class="goods-price">
+            <text>￥{{item.price}}元</text>
+        </view>
+
+      </view>
+    </block>
+  </view>
+</view>

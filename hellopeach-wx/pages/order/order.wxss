@@ -1,0 +1,154 @@
+/* pages/order/order.wxss */
+
+.address-box{
+    /*margin-top: 20rpx;*/
+    width: 100%;
+    height: 95rpx;
+    background-color: #f0eff5;
+    display: flex;
+}
+
+.address-box icon{
+    margin: auto 8rpx auto 20rpx;
+}
+
+.address-text{
+    margin: 24rpx 0 auto;
+}
+.address-text text{
+    font-size: 33rpx;
+}
+
+.address-jump-icon{
+    margin-left: 430rpx;
+    margin-top: 24rpx;
+}
+
+.address-jump-icon image{
+    width: 27rpx;
+    height: 27rpx;
+}
+
+.order-box{
+    padding: 20rpx;
+    margin-top: 20rpx;
+    background-color: #f0eff5;
+}
+
+.order-head text{
+    font-size: 30rpx;
+}
+
+.order-line{
+    margin: 10rpx 0;
+    padding: 0;
+    height: 1rpx;
+    background-color: #6e6b6b;  
+    overflow: hidden;   
+}
+
+.order-goods{
+    margin-top: 20rpx;
+    margin-bottom: 10rpx;
+    display: flex;
+}
+
+.order-goods-pic{
+    margin-top: 25rpx;
+    padding-left: 5rpx;
+}
+
+.order-goods-pic image{
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.order-goods-inf{
+    margin-top: 30rpx;
+    margin-left: 35rpx;
+    height: 120rpx;
+    width: 580rpx;
+}
+
+.order-goods-name text{
+    font-size: 29rpx;
+}
+
+/*.order-goods-price{
+    margin-bottom: 10rpx;
+}*/
+
+.order-goods-price text{
+    font-size: 24rpx;
+}
+
+.order-calculate{
+    margin-top: 25rpx;
+    padding: 0 30rpx 20rpx 30rpx;
+}
+
+.allprice-text{
+    float: left;
+}
+
+.allprice-value{
+    float: right;
+}
+
+.order-calculate-allprice text{
+    font-size: 27rpx;
+    color: #585c5f;
+}
+
+.order-calculate-expense{
+    margin-top: 40rpx;
+}
+
+.order-calculate-expense text{
+    font-size: 27rpx;
+    color: #585c5f;
+}
+
+.expense-text{
+    float: left;
+}
+
+.expense-value{
+    float: right;
+}
+
+.real-price{
+    display: flex;
+    margin-top: 80rpx;
+    margin-left: 508rpx;
+}
+
+.real-price-text text{
+    font-size: 27rpx;
+    color: #585c5f;  
+    text-align: right;
+}
+
+.real-price-value text{
+    font-size: 32rpx;
+    color: #4c5052; 
+}
+
+.order-pay{
+    margin-top: 70rpx;
+    width: 100%;
+}
+
+.pay-button{
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    background-color: #34c367;
+    padding: 15rpx;
+    border-radius: 8rpx;
+}
+
+.pay-button text{
+    font-size: 30rpx;
+    color: white;
+}

@@ -1,0 +1,131 @@
+<!--<import src="/utils/utils.wxml" />-->
+
+<view class="container">
+<!--<template is="toast" hidden="{{toastHidden}}"></template>-->
+<view class="toast-template" hidden="{{toastHidden}}">
+    <text>{{toastText}}</text>
+</view>
+
+<view class="detail-index">
+    <swiper class="details-swiper" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{detailInfo.swiperUrls}}" wx:key="id">
+            <swiper-item>
+                <image src="{{item.surl}}"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+
+    <view class="intro">
+        <view class="intro-text">
+            <text>{{detailInfo.intro}}</text>
+        </view>
+
+        <view class="intro-price">
+            <text>￥{{detailInfo.price}}元</text>
+        </view>
+
+        <view class="intro-deliver">
+            <text>发货提醒：下午3点前下单当天发货，否则第二天开始发货</text>
+        </view>
+    </view>
+
+    <view class="intro-detail">
+        <view class="intro-detail-text">
+            <text>商品详情</text>
+        </view>
+        <!--<view class="intro-detail-line"></view>-->
+        <image src="{{detailInfo.detail_pic}}" mode="widthFix"></image>
+    </view>
+    
+    <view class="footer-box" wx:if="{{modalStatus == 0}}">
+        <view class="put-in-cart" bindtap="putInCart">
+            <text>加入购物车</text>
+        </view>
+        <view class="buynow" bindtap="buyNow">
+            <text>立即购买</text>
+        </view>
+    </view>
+
+     <view class="cart-box" wx:elif="{{modalStatus == 1}}">
+        <view bindtap="backToDetail" class="cart-shadow"></view>
+        <view class="cart-footer">
+            <view class="cart-footer-intro">
+                <view class="cart-text"><text>{{detailInfo.intro}}</text></view>
+                <view class="cart-price"><text>￥{{detailInfo.price}}元</text></view>
+
+                <view class="cart-buy">
+                    <view class="cart-buy-account">
+                        <text>数量</text>
+                    </view>
+
+                    <view class="cart-buy-action">
+                        <view class="minus-button" bindtap="buyCountMinus">
+                            <image src="/images/minus.png" mode="scaleToFill"></image>
+                        </view>
+
+                        <view class="account-show">
+                            <text>{{buyCount}}</text>
+                        </view>
+
+                        <view class="plus-button" bindtap="buyCountAdd" data-left_acount="{{detailInfo.left}}">
+                            <image src="/images/plus.png" mode="scaleToFill"></image>
+                        </view>
+                    </view>
+
+                    <view class="cart-buy-left">
+                        <text>（剩余{{detailInfo.left}}件）</text>
+                    </view>
+
+                </view>
+            </view>
+
+            <view class="footer-cart-1" bindtap="putInCart_2">
+                <text>加入购物车</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="cart-box" wx:else>
+        <view bindtap="backToDetail" class="cart-shadow"></view>
+        <view class="cart-footer">
+            <view class="toast-template" hidden="{{toastHidden}}">
+                <text>{{toastText}}</text>
+            </view>
+
+            <view class="cart-footer-intro">
+                <view class="cart-text"><text>{{detailInfo.intro}}</text></view>
+                <view class="cart-price"><text>￥{{detailInfo.price}}元</text></view>
+
+                <view class="cart-buy">
+                    <view class="cart-buy-account">
+                        <text>数量</text>
+                    </view>
+
+                    <view class="cart-buy-action">
+                        <view class="minus-button" bindtap="buyCountMinus">
+                            <image src="/images/minus.png" mode="scaleToFill"></image>
+                        </view>
+
+                        <view class="account-show">
+                            <text>{{buyCount}}</text>
+                        </view>
+
+                        <view class="plus-button" bindtap="buyCountAdd" data-left_acount="{{detailInfo.left}}">
+                            <image src="/images/plus.png" mode="scaleToFill"></image>
+                        </view>
+                    </view>
+
+                    <view class="cart-buy-left">
+                        <text>（剩余{{detailInfo.left}}件）</text>
+                    </view>
+
+                </view>
+            </view>
+
+            <view class="footer-cart-1" bindtap="buyNow_2">
+                <text>立即购买</text>
+            </view>
+        </view>
+    </view>
+</view>
+</view>

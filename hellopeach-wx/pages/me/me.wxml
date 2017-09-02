@@ -1,0 +1,60 @@
+<view class="container">
+
+    <view class="userinfo">
+        <image class="userinfo-avator" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+
+    <view class="order">
+
+        <view class="order-text">
+            <text>我的订单</text>
+        </view>
+        
+        <view class="order-line"></view>
+
+        <view class="order-choice">
+            <view class="order-waiting">
+                <icon type="waiting_circle" size="30" color="red"></icon>
+            </view>
+            
+            <view class="order-success">
+                <icon type="success_circle" size="30" color="green"></icon>
+            </view>
+        </view>
+
+        <view class="order-tip">
+            <view class="order-tip-waiting">
+                <text>待付款</text>
+            </view>
+            <view class="order-tip-success">
+                <text>已付款</text>
+            </view>
+        </view>
+    </view>
+
+
+    <view class="address">
+        <view class="address-text" bindtap="jumpAddress">
+            <text>收货地址</text>
+        </view>
+        
+        <view class="address-jump">
+            <image src="/images/jump.png"></image>
+        </view>      
+    </view>
+
+    <view class="problem">
+        <view class="problem-text" bindtap="jumpQuestion">
+            <text>常见问题</text>
+        </view>
+        
+        <view class="problem-jump">
+            <image src="/images/jump.png"></image>
+        </view>      
+    </view>
+
+    <!--<view class="copyright">
+        <text>小程序作者微信：tracyyn</text>
+    </view>-->
+</view>

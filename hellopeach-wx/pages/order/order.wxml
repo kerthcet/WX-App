@@ -1,0 +1,63 @@
+<!--pages/order/order.wxml-->
+<view class="container">
+    <view class="address-box" wx:if="{{orderInf.addressStatus}}" bindtap="addAddress">
+        <icon type="warn" size="15"></icon>
+        <view class="address-text">
+            <text>请填写收货地址</text>
+        </view>
+        <view class="address-jump-icon">
+            <image src="/images/jump.png" mode="widthFix"></image>
+        </view>
+    </view>
+    <view class="address-box" wx:else></view>
+
+    <view class="order-box">
+        <view class="order-head">
+            <text>订单信息</text>
+        </view>
+
+        <view class="order-line"></view>
+
+        <view class="order-goods">
+            <view class="order-goods-pic">
+                <image src="{{orderInf.thumbnail}}" mode="widthFix"></image>
+                <!--<image src="../../images/thumbnail01.png"></image>-->
+            </view>
+
+            <view class="order-goods-inf">
+                <view class="order-goods-name">
+                    <text>{{orderInf.name}}</text>
+                </view>
+
+                <view class="order-goods-price">
+                    <text>￥{{orderInf.price}}  x  {{orderInf.buyCount}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="order-calculate">
+        <view class="order-calculate-allprice">
+            <text class="allprice-text">总价</text>
+            <text class="allprice-value">￥{{orderInf.allPrice}}</text>
+        </view>
+        <view class="order-calculate-expense">
+            <text class="expense-text">运费</text>
+            <text class="expense-value">￥{{orderInf.postage}}</text>
+        </view>
+        
+        <view class="real-price">
+            <view class="real-price-text">
+                <text>实付：</text>
+            </view>
+            <view class="real-price-value">
+                <text>￥{{orderInf.realPrice}}</text>
+            </view>
+        </view>
+        <view class="order-pay">
+            <view class="pay-button">
+                <text>微信支付</text>
+            </view>
+        </view>
+    </view>
+</view>
