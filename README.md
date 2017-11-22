@@ -1,2 +1,6 @@
-# WX-App
-微信小程序-水蜜桃商城
+# WxApp -- HelloPeach
+
+## Pre-Requirements
+
+  - flask
+  - python 2.7
