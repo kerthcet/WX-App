@@ -1,6 +1,6 @@
 # WxApp -- HelloPeach
 
-## Pre-Requirements
+## Requirements
 
   - flask
   - python 2.7
